@@ -30,4 +30,6 @@ private:
     void initBoard();
     void setCellColor(int r, int c);
 };
+
+
 #endif // MAINWINDOW_H
