@@ -1,6 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+constexpr int CELL_COUNT = 8;
+constexpr int CELL_SIZE = 60;
+
 #include <QMainWindow>
 #include <QGraphicsRectItem>
 #include <QGraphicsScene>
@@ -22,8 +25,6 @@ public:
 
 
 private:
-    const int CELL_SIZE = 64;
-    const int CELL_COUNT = 8;
     QGraphicsScene *scene;
     QGraphicsRectItem *quads[8][8];
     Ui::MainWindow *ui;

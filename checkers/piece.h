@@ -1,6 +1,7 @@
 #ifndef PIECE_H
 #define PIECE_H
 
+#include "mainwindow.h"
 #include <QColor>
 #include <QGraphicsEllipseItem>
 
@@ -12,7 +13,7 @@ class Piece : public QGraphicsEllipseItem
 public:
     Piece(PieceColor color, PieceType type, int row, int col, QGraphicsItem *parent = nullptr);
     PieceColor color() const {return m_color;}
-    PieceType type() const {return m_type;}
+    PieceType pType() const {return m_type;}
     int row() const {return m_row;}
     int col() const {return m_col;}
 

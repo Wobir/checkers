@@ -28,12 +28,12 @@ void Piece::promoteToKing()
 
 void Piece::updateAppearance()
 {
-    QColor = baseColor = (m_color == Piece::White) ? QColor("#eee") : QColor("#222");
+    QColor baseColor = (m_color == PieceColor::White) ? QColor("#eee") : QColor("#222");
     setBrush(QBrush(baseColor));
     setPen(QPen(Qt::black, 2));
 
     if (m_type == PieceType::Queen)
     {
-        setPen(QPen(Qt::gold, 3));
+        setPen(QPen(Qt::yellow, 3));
     }
 }

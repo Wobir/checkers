@@ -3,6 +3,7 @@
 
 #include <QVector>
 #include <QPair>
+#include "mainwindow.h"
 #include "piece.h"
 struct Move{
     int fromRow, fromCol;
@@ -14,6 +15,7 @@ struct Move{
 class Board
 {
 public:
+
     Board();
 
     void setupInitialPosition();
